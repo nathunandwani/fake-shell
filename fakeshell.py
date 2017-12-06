@@ -36,6 +36,7 @@ if output != "Err":
             output = fakecmd(url, inp)
             print output
         else:
+            r = requests.delete(url + "fakeshell.php")
             sys.exit(0)
     
 
